@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+    text-align: center;
+    padding: 17px;
+    margin: 0;
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(112, 109, 110, 0.6); /* Putih dengan 90% opacity */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box; /* Menyertakan padding dalam perhitungan lebar */
+}
+
+.highlight-box {
+    border: 3px solid #090d5c;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(53, 19, 191); /* Putih dengan 80% opacity */
+    color: #ffffff;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.signature {
+    margin-top: 30px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.photos {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Membuat gambar mengalir ke baris berikutnya */
+    justify-content: center; /* Mengatur gambar di tengah kontainer */
+}
+
+.photos img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color:rgb(53, 19, 191);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color:rgb(25, 6, 101)
+}
+
+#fireworksCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Menjaga agar canvas di belakang konten lainnya */
+    display: block; /* Menghindari masalah dengan element inline */
+}
